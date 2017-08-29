@@ -55,6 +55,7 @@ public class ItemsController {
 		
 		Items item= itemsService.selectItem(Integer.parseInt(idr));
 		model.addAttribute("item", item);
+		//request.setAttribute("item", item);
 
 		//springmvc认为字符串是页面的名称
 		return "editItem";	
